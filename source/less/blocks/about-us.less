@@ -1,0 +1,24 @@
+.about-us {
+   width: 780px;
+   display: flex;
+   margin-left: auto;
+   margin-top: auto;
+   flex-wrap: wrap;
+
+   &__text {
+       box-sizing: border-box;
+       width: 50%;
+       margin: 0;
+       letter-spacing: 0.025em;
+       color: #767676;
+       margin-bottom: 30px;
+   }
+
+   &__text:nth-child(2n+1) {
+       padding-right: 20px;
+   }
+
+   &__text:nth-child(2n) {
+    padding-left: 20px; 
+   }
+}

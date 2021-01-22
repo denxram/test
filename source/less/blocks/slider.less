@@ -1,0 +1,42 @@
+.slider {
+ 
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__list {
+    display: flex;
+    height: 400px; 
+    transition: all 0.7s ease; 
+  }
+
+  &__item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    &__arrow {
+     top: 155px;
+     position:absolute;
+     border: none;
+     background-color: transparent;
+     cursor: pointer;
+   
+       &:focus {
+         outline: none;
+       }
+    }
+
+    &__arrow-left {
+     left: 264px;
+    }
+
+    &__arrow-right {
+     right: 289px;
+
+    }
+
+}
+

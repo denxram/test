@@ -1,0 +1,41 @@
+.breadcrumbs {
+    margin-bottom: 15px;
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        
+    }
+
+    &__item {
+        position: relative;
+        margin-right: 20px;
+
+        &:not(:last-child)::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 14px;
+            right: -10px;
+            top: 4px;
+            transform: rotate(25deg);
+            background-color: #767676;
+        }
+    }
+     
+    &__link {
+        color: #767676;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+    }
+    
+    &__link--active {
+        text-decoration: none;
+    }
+
+    
+}
